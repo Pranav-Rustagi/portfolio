@@ -14,21 +14,17 @@ const About = () => {
         <div className="flex flex-col items-start grid-default-color grid-1">
           <img
             src="assets/coding-pov.png"
-            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-40 bg-black/45 blur-[0.5px] h-full w-full object-cover object-center"
+            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-20 bg-black/75 blur-[0.5px] h-full w-full object-cover object-center"
           />
           <div className="z-10 flex flex-col justify-end h-full mt-20">
             <img
               src="https://avatars.githubusercontent.com/u/57594891?v=4"
               alt="Pranav Rustagi"
-              className="z-10 w-16 h-16 rounded-full object-cover object-center mb-4 md:mb-0 md:w-32 md:h-32"
+              className="z-10 w-16 h-16 rounded-full mb-4 md:mb-0 md:w-32 md:h-32"
             />
             <p className="headtext">Hi, I'm Pranav Rustagi</p>
             <div className="subtext flex gap-2 flex-col">
-              <p>A Full-Stack Developer with strong knowledge of frontend development and experience building real-world web applications that help businesses deliver faster, cleaner, and more scalable digital experiences.</p>
-
-              <p>I&apos;m currently exploring data engineering and working on migrating enterprise data from legacy systems to Databricks to enable more streamlined and reliable data operations.</p>
-
-              <p>I&apos;m driven by a passion for solving real-world challenges, delivering meaningful solutions, and continuously growing across both development and data domains.</p>
+              <p>I'm a Full-Stack Developer with around a year of professional experience, along with two years through internships and freelance work. I focus on building responsive, user-friendly web applications and enjoy learning new tools and best practices to improve how I work. I'm driven by a desire to solve real problems and keep growing as a developer.</p>
             </div>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -93,9 +89,9 @@ const About = () => {
         {/* Grid 3 */}
         <div className="grid-black-color grid-3">
           <div className="z-10 w-3/5 md:w-1/2">
-            <p className="headtext">Time Zone</p>
+            <p className="headtext">Location</p>
             <p className="subtext">
-              I'm based in Earth, and open to remote work worldwide
+              Based in India (UTC+5:30)<br/>Open to remote work
             </p>
           </div>
           <figure className="absolute left-3/10 md:left-1/2 top-1/10">
@@ -104,27 +100,17 @@ const About = () => {
         </div>
         {/* Grid 4 */}
         <div className="grid-special-color grid-4">
-          <div className="flex flex-col items-center justify-evenly gap-4 size-full">
+          <div className="flex flex-col items-center justify-center gap-8 size-full">
             <p className="text-center text-md">
-              Hiring? I might be the one<br/>Here is my resume
-              <br/>
+              Let&apos;s make an impact
+              <br/><br />
+              See how I can contribute to your team
             </p>
             <div className="flex flex-col md:flex-row lg:flex-col gap-4 w-full">
               <ActionButton
                 doneMsg="Downloading"
-                defaultMsg="Full-Stack Developer"
-                // onClick={() => window.open("https://example.com/resume.pdf", "_blank")}
-                // fileUrl="docs/PranavRustagi_FullStackDeveloper.pdf"
+                defaultMsg="Download Resume"
                 fileName="PranavRustagi_FullStackDeveloper.pdf"
-                buttonDefaultImg="assets/download.svg"
-                buttonDoneImage="assets/downloaded.svg"
-              />
-              <ActionButton
-                doneMsg="Downloading"
-                defaultMsg="Data Engineer"
-                // onClick={() => window.open("docs/PranavRustagi_DataEngineer.pdf", "_blank")}
-                // fileUrl="docs/PranavRustagi_DataEngineer.pdf"
-                fileName="PranavRustagi_DataEngineer.pdf"
                 buttonDefaultImg="assets/download.svg"
                 buttonDoneImage="assets/downloaded.svg"
               />
@@ -136,7 +122,7 @@ const About = () => {
           <div className="z-10 w-3/5 md:w-1/2">
             <p className="headtext">Here&apos;s the tech I work with</p>
             <p className="subtext">
-              from building full-stack web applications using modern frameworks to migrating data from legacy systems to Databricks.
+              from building user-friendly front-end interfaces to contributing to full-stack web applications using modern frameworks.
             </p>
           </div>
           <div className="absolute inset-y-9 w-full h-full start-[50%] scale-75 md:scale-150">

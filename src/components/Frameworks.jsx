@@ -1,7 +1,7 @@
 import { OrbitingCircles } from "./OrbitingCircles";
 
 export function Frameworks() {
-  const web_skills = [
+  const skills = [
     "javascript",
     "typescript",
     "react",
@@ -17,38 +17,32 @@ export function Frameworks() {
     "html5",
     "css3",
     "sass",
+    "mysql",
     "git",
     "github",
-    "visual-studio-code",
-    "insomnia",
     "npm",
+    "visual-studio-code",
+    "insomnia"
   ];
 
-  const data_engineering_skills = [
-    "python",
-    "spark",
-    "databricks",
-    "pandas",
-    "airflow",
-    "mysql",
-    "postgresql",
-    "talend",
-    "dbeaver"
-  ];
+  const randomized = Array.from(skills).sort(() => Math.random() - 0.5);
+  const halfInd = Math.floor(randomized.length / 3);
+  const orbit1 = randomized.slice(0, halfInd);
+  const orbit2 = randomized.slice(halfInd);
 
-  const orbit1 = Array.from(web_skills).sort(() => Math.random() - 0.5);
-  const orbit2 = Array.from(data_engineering_skills).sort(() => Math.random() - 0.5);
+  console.log(orbit1);
+  console.log(orbit2);
 
 
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center">
-      <OrbitingCircles iconSize={30}>
-        {orbit1.map((skill, index) => (
+      <OrbitingCircles iconSize={28}>
+        {orbit2.map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} skill={skill} />
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={28} radius={80} reverse speed={2}>
-        {orbit2.map((skill, index) => (
+        {orbit1.map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} skill={skill} />
         ))}
       </OrbitingCircles>
