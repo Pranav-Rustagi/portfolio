@@ -30,10 +30,6 @@ export function Frameworks() {
   const orbit1 = randomized.slice(0, halfInd);
   const orbit2 = randomized.slice(halfInd);
 
-  console.log(orbit1);
-  console.log(orbit2);
-
-
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center">
       <OrbitingCircles iconSize={28}>

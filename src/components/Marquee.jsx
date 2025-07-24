@@ -4,7 +4,6 @@ export default function Marquee({
   reverse = false,
   pauseOnHover = false,
   children,
-  vertical = false,
   repeat = 4,
   ...props
 }) {
@@ -12,9 +11,7 @@ export default function Marquee({
     <div
       {...props}
       className={twMerge(
-        `group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)] ${
-          vertical ? "flex-col" : "flex-row"
-        }`,
+        "group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)] flex-row",
         className
       )}
     >
@@ -24,10 +21,7 @@ export default function Marquee({
           <div
             key={i}
             className={twMerge(
-              "flex shrink-0 justify-around [gap:var(--gap)]",
-              vertical
-                ? "animate-marquee-vertical flex-col"
-                : "animate-marquee flex-row",
+              "flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row",
               pauseOnHover && "group-hover:[animation-play-state:paused]",
               reverse && "[animation-direction:reverse]"
             )}

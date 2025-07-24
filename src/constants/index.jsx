@@ -70,6 +70,9 @@ export const myProjects = [
     }, {
       href: "https://www.npmjs.com/package/highlight-plus",
       type: "npm"
+    }, {
+      href: "https://dev.to/pranav-rustagi/introducing-highlight-plus-supercharged-syntax-highlighting-for-react-1gb6",
+      type: "devto"
     }],
     logo: "/assets/projects/highlight-plus.png",
     image: "/assets/projects/highlight-plus.png",
@@ -108,9 +111,6 @@ export const myProjects = [
     }, {
       href: "https://www.npmjs.com/package/youtube-jedi",
       type: "npm"
-    }, {
-      href: "https://dev.to/pranav-rustagi/introducing-highlight-plus-supercharged-syntax-highlighting-for-react-1gb6",
-      type: "devto"
     }],
     logo: "/assets/projects/youtube-jedi.png",
     image: "/assets/projects/youtube-jedi.png",

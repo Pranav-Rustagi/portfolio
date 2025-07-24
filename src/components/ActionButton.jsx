@@ -22,7 +22,7 @@ const ActionButton = ({ doneMsg = 'Done', defaultMsg = 'Click me', fileName = nu
       onClick={handleClick}
       whileHover={{ y: -5 }}
       whileTap={{ scale: 1.05 }}
-      className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-full cursor-pointer overflow-hidden"
+      className="relative py-4 px-6 text-sm text-center rounded-full font-extralight bg-primary cursor-pointer overflow-hidden w-full"
     >
       <AnimatePresence mode="wait">
         {disable ? (

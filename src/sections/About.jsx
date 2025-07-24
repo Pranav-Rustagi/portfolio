@@ -91,7 +91,7 @@ const About = () => {
           <div className="z-10 w-3/5 md:w-1/2">
             <p className="headtext">Location</p>
             <p className="subtext">
-              Based in India (UTC+5:30)<br/>Open to remote work
+              Based in India (UTC+5:30)<br />Open to remote work
             </p>
           </div>
           <figure className="absolute left-3/10 md:left-1/2 top-1/10">
@@ -101,10 +101,13 @@ const About = () => {
         {/* Grid 4 */}
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-8 size-full">
-            <p className="text-center text-md">
-              Let&apos;s make an impact
-              <br/><br />
-              See how I can contribute to your team
+            <p className="text-center text-md flex flex-col gap-1">
+              <span>
+                Let&apos;s build something great together
+              </span>
+              <span>
+                See how I can add value to your team
+              </span>
             </p>
             <div className="flex flex-col md:flex-row lg:flex-col gap-4 w-full">
               <ActionButton
