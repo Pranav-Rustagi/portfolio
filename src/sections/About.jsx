@@ -122,13 +122,13 @@ const About = () => {
         </div>
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
-          <div className="z-10 w-3/5 md:w-1/2">
+          <div className="z-10 w-2/3 md:w-1/2">
             <p className="headtext">Here&apos;s the tech I work with</p>
             <p className="subtext">
               from building user-friendly front-end interfaces to contributing to full-stack web applications using modern frameworks.
             </p>
           </div>
-          <div className="absolute inset-y-9 w-full h-full start-[50%] scale-75 md:scale-150">
+          <div className="absolute top-9 md:top-[40%] lg:top-[45%] w-full h-full start-[55%] md:start-[40%] scale-75 md:scale-150">
             <Frameworks />
           </div>
         </div>

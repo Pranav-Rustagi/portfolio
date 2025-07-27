@@ -160,7 +160,7 @@ export const experiences = [
     company: "Genpact",
     date: "Oct 2024 - Present",
     contents: [
-      "Migrated 500+ ETL jobs to Databricks by converting Talend workflows and PostgreSQL transformation logic — ensuring data integrity, and enhancing performance across enterprise pipelines.",
+      "Migrated 100+ ETL jobs to Databricks by converting Talend workflows and PostgreSQL transformation logic — ensuring data integrity, and enhancing performance across enterprise pipelines.",
       "Automated the conversion of PostgreSQL ETL components into Databricks SQL notebooks using Python — improving throughput by 60% and minimizing manual effort.",
       "Generated lineage mappings from Orion Governance by applying graph traversal on component-level dependencies — improving traceability by 35% and accelerating root-cause analysis during ETL migration.",
       "Built a real-time React dashboard to track data migration from Greenplum to Databricks with unified filters for overall, domain, and ingestion progress — reducing reporting delays by 85%.",
@@ -217,23 +217,17 @@ export const experiences = [
   }
 ];
 export const reviews = [
-  // {
-  //   name: "Eve",
-  //   username: "@eve",
-  //   body: "So glad I found this. It has changed the game for me.",
-  //   // img: "https://robohash.org/eve",
-  // },
   {
     name: "Sandeep Thakur",
     profile_link: "https://www.linkedin.com/in/sandeep-thakur-96a378143",
-    profile_image: "https://media.licdn.com/dms/image/v2/C4D03AQGvITt0-hwMfw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1642838093709?e=1758153600&v=beta&t=P4mwPle6YrZKb5DQ3WA8mIrWGF8gU0Gz-T0yR5_YYik",
+    profile_image: "assets/testimonials/1642838093709.jpeg",
     role: "Software Engineer",
     body: "I highly recommend Pranav for his outstanding work for our web app in our organization. His expertise and dedication have been invaluable to our projects. He consistently delivers top-notch solutions and stays up-to-date with the latest developments in the field. A true asset to any team."
   },
   {
     name: "Raj Kumar",
     profile_link: "https://www.linkedin.com/in/raj-kumar-b5a203100/",
-    profile_image: "https://media.licdn.com/dms/image/v2/D4D03AQGD7GXWe6tfUQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669126190789?e=1758153600&v=beta&t=ULhhZWgPPRSvRrFlJfSI_2m_nuHk-zNnDPJpsYdHQEM",
+    profile_image: "assets/testimonials/1669126190789.jpeg",
     role: "Shopify App Dev | Camouflage Shopify App | Backend & React",
     body: "Pranav worked on a variety of projects in short span. The UI and functionalities added to the web apps are top notch! A true rising star!!"
   }

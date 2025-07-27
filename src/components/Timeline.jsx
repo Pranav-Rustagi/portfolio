@@ -43,7 +43,7 @@ export const Timeline = ({ data }) => {
               </div>
             </div>
 
-            <div className="relative w-full pl-10 pr-4 lg:pl-4 mt-6 md:mt-0 text-sm md:text-base">
+            <div className="relative w-full pl-10 pr-4 lg:pl-4 text-sm md:text-base">
               <ul className="list-disc">
                 {item.contents.map((content, index) => (
                   <li className="mb-3 font-normal text-neutral-300" key={index}>
