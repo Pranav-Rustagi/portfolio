@@ -42,13 +42,14 @@ export default function Testimonial() {
       <h2 className="text-heading">What People Say About Me</h2>
       <p className="mt-6 text-neutral-300 text-lg">Feedbacks from colleagues, clients, and collaborators across LinkedIn and other platforms.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 w-full">
-        {reviews.map((review) => (
-          <div className="w-full" key={review.profile_link}>
-            <ReviewCard key={review.profile_link} {...review} />
-          </div>
-        ))}
+        {
+          reviews.map((review) => (
+            <div className={`w-full col-span-1 ${review?.wide ? "md:col-span-2" : "md:col-span-1"}`} key={review.profile_link}>
+              <ReviewCard key={review.profile_link} {...review} />
+            </div>
+          ))
+        }
       </div>
-
     </section>
   );
 }

@@ -158,12 +158,13 @@ export const experiences = [
     title: "Software Engineer",
     job: "Data Migration",
     company: "Genpact",
-    date: "Oct 2024 - Present",
+    date: "Oct 2024 - Dec 2025",
     contents: [
-      "Migrated 100+ ETL jobs to Databricks by converting Talend workflows and PostgreSQL transformation logic — ensuring data integrity, and enhancing performance across enterprise pipelines.",
-      "Automated the conversion of PostgreSQL ETL components into Databricks SQL notebooks using Python — improving throughput by 60% and minimizing manual effort.",
-      "Generated lineage mappings from Orion Governance by applying graph traversal on component-level dependencies — improving traceability by 35% and accelerating root-cause analysis during ETL migration.",
-      "Built a real-time React dashboard to track data migration from Greenplum to Databricks with unified filters for overall, domain, and ingestion progress — reducing reporting delays by 85%.",
+      "Migrated 100+ enterprise ETL jobs from Talend and Greenplum to Databricks by converting Talend workflows and PostgreSQL transformation logic, ensuring data integrity while improving scalability and pipeline performance.",
+      "Designed and developed an end-to-end Python-based ETL code conversion framework to automate the transformation of PostgreSQL and Talend components into Databricks SQL notebooks, improving throughput by 60% and reducing manual effort by 70%.",
+      "Generated end-to-end data lineage mappings from Orion Governance by applying graph traversal techniques on component-level dependencies, improving traceability by 35% and accelerating root-cause analysis during large-scale ETL migrations.",
+      "Built a real-time data migration monitoring dashboard using React, Hooks, Redux, and Tailwind CSS, featuring dynamic filters, charts, and optimized polling-based updates to track overall, domain-level, and ingestion progress, reducing reporting delays by 85%.",
+      "Contributed to the enterprise-scale data modernization initiative for GE Vernova, supporting the migration of 100+ ETL components to Databricks and enabling improved workflow efficiency, operational visibility, and analytics readiness."
     ],
   },
   {
@@ -172,11 +173,10 @@ export const experiences = [
     company: "Genpact",
     date: "Feb 2024 - Jul 2024",
     contents: [
-      "Designed and built a cloud-based data lake on AWS S3 to centralize ingestion from multiple healthcare data sources. Automated and scheduled workflows using Apache Airflow, with dedicated pipelines for each source.",
-      "Enabled large-scale analytics on over 2 million SPARCS records, generating business insights to support data-driven decision-making around cost, resource allocation, and revenue optimization.",
-      "Trained and deployed a regression model with MLflow to predict patient stay duration, achieving an RMSE of 2.69 and R² of 0.91 — improving operational decision-making.",
-      "Developed an AI-based data discrepancy detection system for PDF invoices, supporting single and batch uploads with structured data extraction.",
-      "Optimized AI validation costs by using fuzzy matching to narrow down relevant data, significantly reducing token consumption while improving result accuracy."
+      "Designed and built a cloud-based data lake on AWS S3 to centralize ingestion from multiple healthcare data sources, orchestrating and scheduling source-specific pipelines using Apache Airflow for reliable and scalable data processing.",
+      "Enabled large-scale healthcare analytics on 2M+ SPARCS records by building React and TypeScript dashboards with dynamic filters and charts, supporting data-driven decision-making for cost analysis, resource allocation, and revenue optimization.",
+      "Developed a full-stack AI-powered invoice discrepancy detection system with a React and TypeScript frontend and a Python-based backend to process single and batch PDF uploads, extract structured data, and identify mismatches against database records.",
+      "Optimized AI validation workflows by applying fuzzy matching to narrow relevant data before OpenAI-based verification, significantly reducing token consumption while improving accuracy, and enabling users to review results and export discrepancies as CSV."
     ],
   },
   {
@@ -218,16 +218,24 @@ export const experiences = [
 ];
 export const reviews = [
   {
+    name: "Rajashmita PMP CSM",
+    profile_link: "https://www.linkedin.com/in/rajashmita/",
+    profile_image: "https://media.licdn.com/dms/image/v2/C4E03AQGn3YTtNUfFtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517633087766?e=1767830400&v=beta&t=OeFgNyp055iJHC6kuB2-gqbQQGKn6_knpMGHWE4kres",
+    role: "Data & Analytics | PMP®, CSM, SAFe 5 | Cloud Data Migration | BI Strategy | Tableau | Power BI | 2x Databricks Certified",
+    body: "I had the privilege of working with Pranav Rustagi on the GE Vernova Greenplum to Databricks Migration Project, one of the largest and most complex migration initiatives in our portfolio. Pranav consistently demonstrated strong ownership, technical excellence, and a commitment to delivering his tasks on time with precision. He maintained clear and structured daily progress updates, asked insightful questions to ensure alignment with project goals, and proactively supported other team members with technical guidance.\n\nDependable, collaborative, and detail-oriented — Pranav proved to be a valuable contributor to the success of this large-scale data modernization effort. Highly recommended.",
+    wide: true
+  },
+  {
     name: "Sandeep Thakur",
     profile_link: "https://www.linkedin.com/in/sandeep-thakur-96a378143",
-    profile_image: "assets/testimonials/1642838093709.jpeg",
+    profile_image: "https://media.licdn.com/dms/image/v2/C4D03AQGvITt0-hwMfw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1642838093709?e=1767830400&v=beta&t=tlkCjBdPQZQ0yCRzH6RWGSmDLbqpISo5NojhwyMUwwo",
     role: "Software Engineer",
     body: "I highly recommend Pranav for his outstanding work for our web app in our organization. His expertise and dedication have been invaluable to our projects. He consistently delivers top-notch solutions and stays up-to-date with the latest developments in the field. A true asset to any team."
   },
   {
     name: "Raj Kumar",
     profile_link: "https://www.linkedin.com/in/raj-kumar-b5a203100/",
-    profile_image: "assets/testimonials/1669126190789.jpeg",
+    profile_image: "https://media.licdn.com/dms/image/v2/D4D03AQGD7GXWe6tfUQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669126190789?e=1767830400&v=beta&t=qn6NKEy-_isp_-Xwsq0raxH0dfycRTT25VB-l5QjdwE",
     role: "Shopify App Dev | Camouflage Shopify App | Backend & React",
     body: "Pranav worked on a variety of projects in short span. The UI and functionalities added to the web apps are top notch! A true rising star!!"
   }

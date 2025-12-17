@@ -1,30 +1,40 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-function Navigation() {
+
+function Navigation({ setMenuOpen }) {
+
+  const closeMenu = () => {
+    if (setMenuOpen) {
+      setTimeout(() => {
+        setMenuOpen(false);
+      }, 100);
+    }
+  }
+
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link" href="#about">
+        <a className="nav-link" href="#about" onClick={closeMenu}>
           About
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#projects">
+        <a className="nav-link" href="#projects" onClick={closeMenu}>
           Projects
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#experience">
+        <a className="nav-link" href="#experience" onClick={closeMenu}>
           Experience
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#testimonials">
+        <a className="nav-link" href="#testimonials" onClick={closeMenu}>
           Testimonials
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#contact">
+        <a className="nav-link" href="#contact" onClick={closeMenu}>
           Contact
         </a>
       </li>
@@ -58,7 +68,7 @@ const Navbar = () => {
             />
           </button>
           <nav className="hidden sm:flex">
-            <Navigation />
+            <Navigation setMenuOpen={setIsOpen} />
           </nav>
         </div>
       </div>
@@ -71,7 +81,7 @@ const Navbar = () => {
           transition={{ duration: 2 }}
         >
           <nav className="pb-5 h-screen w-screen flex items-center justify-center -translate-y-[100px]">
-            <Navigation />
+            <Navigation setMenuOpen={setIsOpen} />
           </nav>
         </motion.div>
       )}

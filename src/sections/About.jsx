@@ -23,8 +23,9 @@ const About = () => {
               className="z-10 w-16 h-16 rounded-full mb-4 md:mb-0 md:w-32 md:h-32"
             />
             <p className="headtext">Hi, I'm Pranav Rustagi</p>
-            <div className="subtext flex gap-2 flex-col">
-              <p>I'm a Full-Stack Developer with around a year of professional experience, along with two years through internships and freelance work. I focus on building responsive, user-friendly web applications and enjoy learning new tools and best practices to improve how I work. I'm driven by a desire to solve real problems and keep growing as a developer.</p>
+            <div className="subtext flex gap-4 flex-col">
+              <p>I am a software engineer with experience building frontend and full-stack web applications using React, TypeScript, and modern JavaScript frameworks, along with backend technologies such as Node.js, Express, and REST APIs.</p>
+              <p>Through professional roles and projects, I have worked on dashboards, internal tools, and end-to-end features, contributing to responsive user interfaces and backend functionality. I enjoy collaborating with teams, writing clean and maintainable code, and continuously improving my skills across the stack.</p>
             </div>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -89,9 +90,9 @@ const About = () => {
         {/* Grid 3 */}
         <div className="grid-black-color grid-3">
           <div className="z-10 w-3/5 md:w-1/2">
-            <p className="headtext">Location</p>
+          <p className="headtext">Current location</p>
             <p className="subtext">
-              Based in India (UTC+5:30)<br />Open to remote work
+              Bengaluru (Karnataka, India)
             </p>
           </div>
           <figure className="absolute left-3/10 md:left-1/2 top-1/10">
@@ -113,7 +114,7 @@ const About = () => {
               <ActionButton
                 doneMsg="Downloading"
                 defaultMsg="Download Resume"
-                fileName="PranavRustagi_FullStackDeveloper.pdf"
+                fileName="PranavRustagi_SoftwareEngineer.pdf"
                 buttonDefaultImg="assets/download.svg"
                 buttonDoneImage="assets/downloaded.svg"
               />
