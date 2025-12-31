@@ -43,7 +43,7 @@ export default function Testimonial() {
       <h2 className="text-heading">What People Say About Me</h2>
       <p className="mt-6 text-neutral-300 text-lg">Feedbacks from colleagues, clients, and collaborators across LinkedIn and other platforms.</p>
 
-      <div className="overflow-hidden -mx-5 sm:-mx-10 lg:-mx-15">
+      <div className="overflow-hidden -mx-5 sm:-mx-10 md:mx-0">
         <div className="flex gap-45 md:gap-15 group mt-12">
           <div className="flex animate-marquee-small md:animate-marquee-big gap-5">
             {

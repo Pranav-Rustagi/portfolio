@@ -26,8 +26,8 @@
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
   }
-  --animate-marquee-big: marquee-big 10s linear infinite;
-  --animate-marquee-small: marquee-small 10s linear infinite;
+  --animate-marquee-big: marquee-big 30s linear infinite;
+  --animate-marquee-small: marquee-small 30s linear infinite;
   --animate-marquee-vertical: marquee-vertical 50s linear infinite;
 
   @keyframes marquee-big {
