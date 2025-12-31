@@ -26,15 +26,25 @@
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
   }
-  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-big: marquee-big 10s linear infinite;
+  --animate-marquee-small: marquee-small 10s linear infinite;
   --animate-marquee-vertical: marquee-vertical 50s linear infinite;
 
-  @keyframes marquee {
+  @keyframes marquee-big {
     from {
       transform: translateX(0);
     }
     to {
       transform: translateX(calc(-100% - var(--spacing) * 15));
+    }
+  }
+
+  @keyframes marquee-small {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--spacing) * 45));
     }
   }
 
@@ -148,6 +158,6 @@ body {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
 }
 
-.overflow-hidden > div:has(.animate-marquee):hover .animate-marquee {
+.overflow-hidden > div:has(.animate-marquee-small):hover .animate-marquee-small, .overflow-hidden > div:has(.animate-marquee-big):hover .animate-marquee-big {
   animation-play-state: paused !important;
 }
