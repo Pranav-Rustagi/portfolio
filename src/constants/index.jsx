@@ -220,22 +220,21 @@ export const reviews = [
   {
     name: "Rajashmita PMP CSM",
     profile_link: "https://www.linkedin.com/in/rajashmita/",
-    profile_image: "https://media.licdn.com/dms/image/v2/C4E03AQGn3YTtNUfFtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517633087766?e=1767830400&v=beta&t=OeFgNyp055iJHC6kuB2-gqbQQGKn6_knpMGHWE4kres",
+    profile_image: "/assets/testimonials/rajashmita.png",
     role: "Data & Analytics | PMP®, CSM, SAFe 5 | Cloud Data Migration | BI Strategy | Tableau | Power BI | 2x Databricks Certified",
-    body: "I had the privilege of working with Pranav Rustagi on the GE Vernova Greenplum to Databricks Migration Project, one of the largest and most complex migration initiatives in our portfolio. Pranav consistently demonstrated strong ownership, technical excellence, and a commitment to delivering his tasks on time with precision. He maintained clear and structured daily progress updates, asked insightful questions to ensure alignment with project goals, and proactively supported other team members with technical guidance.\n\nDependable, collaborative, and detail-oriented — Pranav proved to be a valuable contributor to the success of this large-scale data modernization effort. Highly recommended.",
-    wide: true
+    body: "Pranav consistently demonstrated strong ownership, technical excellence, and a commitment to delivering his tasks on time with precision. He maintained clear and structured daily progress updates, asked insightful questions to ensure alignment with project goals, and proactively supported other team members with technical guidance."
   },
   {
     name: "Sandeep Thakur",
     profile_link: "https://www.linkedin.com/in/sandeep-thakur-96a378143",
-    profile_image: "https://media.licdn.com/dms/image/v2/C4D03AQGvITt0-hwMfw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1642838093709?e=1767830400&v=beta&t=tlkCjBdPQZQ0yCRzH6RWGSmDLbqpISo5NojhwyMUwwo",
+    profile_image: "/assets/testimonials/sandeep-thakur-96a378143.png",
     role: "Software Engineer",
     body: "I highly recommend Pranav for his outstanding work for our web app in our organization. His expertise and dedication have been invaluable to our projects. He consistently delivers top-notch solutions and stays up-to-date with the latest developments in the field. A true asset to any team."
   },
   {
     name: "Raj Kumar",
     profile_link: "https://www.linkedin.com/in/raj-kumar-b5a203100/",
-    profile_image: "https://media.licdn.com/dms/image/v2/D4D03AQGD7GXWe6tfUQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669126190789?e=1767830400&v=beta&t=qn6NKEy-_isp_-Xwsq0raxH0dfycRTT25VB-l5QjdwE",
+    profile_image: "/assets/testimonials/raj-kumar-b5a203100.png",
     role: "Shopify App Dev | Camouflage Shopify App | Backend & React",
     body: "Pranav worked on a variety of projects in short span. The UI and functionalities added to the web apps are top notch! A true rising star!!"
   }

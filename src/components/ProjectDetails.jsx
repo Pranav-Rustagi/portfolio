@@ -29,7 +29,7 @@ const ProjectDetails = ({
         </h2>
 
         <div className="mb-10">
-          <img src={image} alt={title} className="w-full md:w-3/4 lg:w-1/2 rounded-t-2xl mx-auto" />
+          <img src={image} alt={title} className="w-full md:w-3/4 lg:w-1/2 rounded-t-2xl mx-auto" loading="lazy" />
         </div>
 
         <div className="flex flex-col gap-10">
@@ -98,18 +98,6 @@ const ProjectDetails = ({
                       )
                     })
                   }
-                  {/* <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href}>
-                    View on NPM&nbsp;
-                    <img src="assets/arrow-up.svg" className="size-4" />
-                  </a>
-                  <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href}>
-                    View on GitHub&nbsp;
-                    <img src="assets/arrow-up.svg" className="size-4" />
-                  </a>
-                  <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href}>
-                    View on Dev.to&nbsp;
-                    <img src="assets/arrow-up.svg" className="size-4" />
-                  </a> */}
                 </div>
               </div>
             )

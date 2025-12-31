@@ -47,5 +47,5 @@ export function Frameworks() {
 }
 
 const Icon = ({ src, skill }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-105" alt={skill} />
+  <img src={src} className="duration-200 rounded-sm hover:scale-105" alt={skill} loading="lazy" />
 );

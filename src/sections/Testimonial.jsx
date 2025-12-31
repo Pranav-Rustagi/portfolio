@@ -12,6 +12,7 @@ const ReviewCard = ({ profile_image, name, role, body, profile_link }) => {
         <img
           src="./assets/socials/linkedin.svg" alt=""
           className="absolute right-5 top-4"
+          loading="lazy"
         />
       </a>
       <div className="flex flex-row items-center gap-4 mb-3 w-full overflow-hidden">
@@ -41,14 +42,28 @@ export default function Testimonial() {
     <section className="items-start c-space section-spacing" id="testimonials">
       <h2 className="text-heading">What People Say About Me</h2>
       <p className="mt-6 text-neutral-300 text-lg">Feedbacks from colleagues, clients, and collaborators across LinkedIn and other platforms.</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 w-full">
-        {
-          reviews.map((review) => (
-            <div className={`w-full col-span-1 ${review?.wide ? "md:col-span-2" : "md:col-span-1"}`} key={review.profile_link}>
-              <ReviewCard key={review.profile_link} {...review} />
-            </div>
-          ))
-        }
+
+      <div className="overflow-hidden">
+        <div className="flex gap-15 group mt-12">
+          <div className="flex animate-marquee gap-5">
+            {
+              reviews.map((review) => (
+                <div className="w-full lg:w-1/3 shrink-0" key={review.profile_link}>
+                  <ReviewCard key={review.profile_link} {...review} />
+                </div>
+              ))
+            }
+          </div>
+          <div className="flex animate-marquee gap-5">
+            {
+              reviews.map((review) => (
+                <div className="w-full lg:w-1/3 shrink-0" key={review.profile_link}>
+                  <ReviewCard key={review.profile_link} {...review} />
+                </div>
+              ))
+            }
+          </div>
+        </div>
       </div>
     </section>
   );

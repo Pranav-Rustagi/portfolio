@@ -26,7 +26,7 @@
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
   }
-  --animate-marquee: marquee 50s linear infinite;
+  --animate-marquee: marquee 30s linear infinite;
   --animate-marquee-vertical: marquee-vertical 50s linear infinite;
 
   @keyframes marquee {
@@ -34,7 +34,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(calc(-100% - var(--gap)));
+      transform: translateX(calc(-100% - var(--spacing) * 15));
     }
   }
 
@@ -146,4 +146,8 @@ body {
 
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+
+.overflow-hidden > div:has(.animate-marquee):hover .animate-marquee {
+  animation-play-state: paused !important;
 }
