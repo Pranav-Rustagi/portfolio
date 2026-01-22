@@ -1,3 +1,5 @@
+import { body } from "motion/react-client";
+
 export const myProjects = [
   {
     id: "chatsy",
@@ -218,18 +220,25 @@ export const experiences = [
 ];
 export const reviews = [
   {
+    name: "Ankit Kumar",
+    profile_link: "https://www.linkedin.com/in/akumar89/",
+    profile_image: "/assets/testimonials/akumar89.png",
+    role: "International Partnerships",
+    body: "Pranav picked up new tools, frameworks and tasks remarkably fast and consistently delivered well-structured, thoughtful solutions. He showed a strong sense of ownership over his work. What stood out most was his ability to break down problems and independently arrive at effective solutions, something you don’t often see at an intern level.\n\nI have no doubt that Pranav will continue to grow into an excellent engineer and add value wherever he goes."
+  },
+  {
     name: "Rajashmita PMP CSM",
     profile_link: "https://www.linkedin.com/in/rajashmita/",
     profile_image: "/assets/testimonials/rajashmita.png",
     role: "Data & Analytics | PMP®, CSM, SAFe 5 | Cloud Data Migration | BI Strategy | Tableau | Power BI | 2x Databricks Certified",
-    body: "Pranav consistently demonstrated strong ownership, technical excellence, and a commitment to delivering his tasks on time with precision. He maintained clear and structured daily progress updates, asked insightful questions to ensure alignment with project goals, and proactively supported other team members with technical guidance."
+    body: "Pranav consistently demonstrated strong ownership, technical excellence, and a commitment to delivering his tasks on time with precision. He asked insightful questions to ensure alignment with project goals, and proactively supported other team members with technical guidance.\n\nDependable, collaborative, and detail-oriented — Pranav proved to be a valuable contributor to the success of this large-scale data modernization effort."
   },
   {
     name: "Sandeep Thakur",
     profile_link: "https://www.linkedin.com/in/sandeep-thakur-96a378143",
     profile_image: "/assets/testimonials/sandeep-thakur-96a378143.png",
     role: "Software Engineer",
-    body: "I highly recommend Pranav for his outstanding work for our web app in our organization. His expertise and dedication have been invaluable to our projects. He consistently delivers top-notch solutions and stays up-to-date with the latest developments in the field. A true asset to any team."
+    body: "I highly recommend Pranav for his outstanding work for our web app in our organization. His expertise and dedication have been invaluable to our projects. He consistently delivers top-notch solutions and stays up-to-date with the latest developments in the field.\n\nA true asset to any team."
   },
   {
     name: "Raj Kumar",
