@@ -1,5 +1,3 @@
-import { body } from "motion/react-client";
-
 export const myProjects = [
   {
     id: "chatsy",
