@@ -32,7 +32,7 @@ const Hero = () => {
       </figure>
       <span className="absolute bottom-2 left-1/2 -translate-x-1/2 inline-flex flex-col items-center bg-black/20 px-4 py-2 pointer-events-none animate-bounce text-xs md:text-lg shadow-2xl lg:hidden">
         Scroll down
-        <img src="assets/down-arrow.svg" alt="scroll down" className="w-3 h-3" />
+        <img src="assets/down-arrow.svg" alt="scroll down" className="size-3" />
       </span>
     </section>
   );

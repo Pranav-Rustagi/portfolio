@@ -14,7 +14,7 @@ const ProjectDetails = ({
   return (
     <div className="fixed inset-0 z-[1000] flex w-screen h-screen overflow-hidden backdrop-blur-3xl bg-black">
       <motion.div
-        className="flex flex-col gap-y-10 relative h-full w-full shadow-sm rounded-2xl px-8 md:px-20 pb-10 overflow-scroll"
+        className="flex flex-col gap-y-10 relative size-full shadow-sm rounded-2xl px-8 md:px-20 pb-10 overflow-scroll"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
       >
@@ -23,7 +23,7 @@ const ProjectDetails = ({
             onClick={closeModal}
             className="text-neutral-400 text-sm md:text-base flex items-center gap-x-2 hover:cursor-pointer -ml-2 px-2 hover-animation"
           >
-            <img src="assets/back.svg" alt="" className="w-4 h-4 opacity-70" />
+            <img src="assets/back.svg" alt="" className="size-4 opacity-70" />
             <span>Back</span>
           </button>
         </div>

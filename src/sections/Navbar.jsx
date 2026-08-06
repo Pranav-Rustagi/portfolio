@@ -53,7 +53,7 @@ const Navbar = () => {
           >
             <img
               src="/logo.svg"
-              className="w-8 h-8"
+              className="size-8"
               alt="logo"
             />
           </a>
@@ -63,7 +63,7 @@ const Navbar = () => {
           >
             <img
               src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              className="w-6 h-6"
+              className="size-6"
               alt="toggle"
             />
           </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
           style={{ maxHeight: "100vh" }}
           transition={{ duration: 2 }}
         >
-          <nav className="pb-5 h-screen w-screen flex items-center justify-center -translate-y-[100px]">
+          <nav className="pb-5 w-screen h-screen flex items-center justify-center -translate-y-[100px]">
             <Navigation setMenuOpen={setIsOpen} />
           </nav>
         </motion.div>
