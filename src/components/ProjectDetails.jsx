@@ -1,4 +1,7 @@
 import { motion } from "motion/react";
+
+const PLATFORM_NAMES = { github: "GitHub", npm: "NPM", devto: "Dev.to" };
+
 const ProjectDetails = ({
   title,
   description,
@@ -80,15 +83,7 @@ const ProjectDetails = ({
                 <div className="flex gap-x-15 flex-wrap space-y-2 md:space-y-5 lg:space-y-0">
                   {
                     links?.map(({ href, type }) => {
-                      let platform_name;
-                      
-                      console.log(type);
-                      switch (type) {
-                        case "github": platform_name = "GitHub"; break;
-                        case "npm": platform_name = "NPM"; break;
-                        case "devto": platform_name = "Dev.to"; break;
-                        default: platform_name = "Others"
-                      }
+                      const platform_name = PLATFORM_NAMES[type] ?? "Others";
 
                       return (
                         <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href} key={platform_name}>

@@ -65,29 +65,6 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-
-      {/* <div className="overflow-hidden mx-5 sm:mx-10 md:mx-0">
-        <div className="flex flex-row-reverse gap-45 md:gap-15 group mt-12">
-          <div className="flex animate-marquee-small-rev md:animate-marquee-big-rev gap-5">
-            {
-              reviews.map((review) => (
-                <div className="w-full lg:w-1/3 shrink-0 max-w-screen" key={review.profile_link}>
-                  <ReviewCard key={review.profile_link} {...review} />
-                </div>
-              ))
-            }
-          </div>
-          <div className="flex animate-marquee-small-rev md:animate-marquee-big-rev gap-5">
-            {
-              reviews.map((review) => (
-                <div className="w-full lg:w-1/3 shrink-0 max-w-screen" key={review.profile_link}>
-                  <ReviewCard key={review.profile_link} {...review} />
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

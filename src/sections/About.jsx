@@ -50,11 +50,6 @@ const About = () => {
               text="Problem Solving"
               containerRef={grid2Container}
             />
-            {/* <Card
-              style={{ rotate: "-45deg", top: "65%", left: "-5%" }}
-              text="Data Engineering"
-              containerRef={grid2Container}
-            /> */}
             <Card
               style={{ rotate: "-15deg", top: "30%", right: "-2%" }}
               text="Automation"
@@ -70,11 +65,6 @@ const About = () => {
               image="assets/logos/pink-node.svg"
               containerRef={grid2Container}
             />
-            {/* <Card
-              style={{ rotate: "25deg", top: "50%", left: "0%" }}
-              image="assets/logos/pink-databricks.svg"
-              containerRef={grid2Container}
-            /> */}
             <Card
               style={{ rotate: "5deg", top: "50%", right: "-5%" }}
               image="assets/logos/pink-python.svg"
