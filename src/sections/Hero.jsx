@@ -11,7 +11,7 @@ import Loader from "../components/Loader";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex min-h-screen lg:items-center justify-start c-space">
+    <section className="relative flex min-h-screen lg:items-center justify-start c-space">
       <HeroText />
       <ParallaxBackground />
       <figure
@@ -30,10 +30,12 @@ const Hero = () => {
           </Suspense>
         </Canvas>
       </figure>
-      <span className="absolute bottom-2 left-1/2 -translate-x-1/2 inline-flex flex-col items-center bg-black/20 px-4 py-2 pointer-events-none animate-bounce text-xs md:text-lg shadow-2xl lg:hidden">
-        Scroll down
-        <img src="assets/down-arrow.svg" alt="scroll down" className="size-3" />
-      </span>
+      {isMobile && (
+        <span className="absolute bottom-2 left-1/2 -translate-x-1/2 inline-flex flex-col items-center bg-black/20 px-4 py-2 pointer-events-none animate-bounce text-xs md:text-lg shadow-2xl">
+          Scroll down
+          <img src="assets/down-arrow.svg" alt="scroll down" className="size-3" />
+        </span>
+      )}
     </section>
   );
 };
