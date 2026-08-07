@@ -144,14 +144,10 @@ export const Particles = ({
       canvasRef.current.style.height = `${canvasSize.current.h}px`;
       context.current.scale(dpr, dpr);
 
-      // Clear existing particles and create new ones with exact quantity
+      // Reset particles; drawParticles (called after this by initCanvas) recreates them
       circles.current = [];
-      for (let i = 0; i < quantity; i++) {
-        const circle = circleParams();
-        drawCircle(circle);
-      }
     }
-  }, [dpr, quantity, circleParams, drawCircle]);
+  }, [dpr]);
 
   const initCanvas = useCallback(() => {
     resizeCanvas();

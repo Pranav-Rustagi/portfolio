@@ -80,7 +80,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
       width: width.current * 2,
       height: width.current * 2,
       onRender: (state) => {
-        if (!pointerInteracting.current) phi.current += 0.005;
+        if (pointerInteracting.current === null) phi.current += 0.005;
         state.phi = phi.current + rs.get();
         state.width = width.current * 2;
         state.height = width.current * 2;
