@@ -1,8 +1,11 @@
-import { useRef } from "react";
+import { lazy, Suspense, useRef } from "react";
 import Card from "../components/Card";
-import { Globe } from "../components/globe";
 import ActionButton from "../components/ActionButton";
 import { Frameworks } from "../components/Frameworks";
+
+const Globe = lazy(() =>
+  import("../components/globe").then((m) => ({ default: m.Globe }))
+);
 
 const About = () => {
   const grid2Container = useRef();
@@ -15,12 +18,14 @@ const About = () => {
           <img
             src="assets/coding-pov.png"
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-20 bg-black/75 blur-[0.5px] size-full object-cover object-center"
+            loading="lazy"
           />
           <div className="z-10 flex flex-col justify-end h-full mt-20">
             <img
               src="https://avatars.githubusercontent.com/u/57594891?v=4"
               alt="Pranav Rustagi"
               className="z-10 size-16 rounded-full mb-4 md:mb-0 md:size-32"
+              loading="lazy"
             />
             <p className="headtext">Hi, I&apos;m Pranav Rustagi</p>
             <div className="subtext flex gap-4 flex-col">
@@ -86,7 +91,9 @@ const About = () => {
             </p>
           </div>
           <figure className="absolute left-3/10 md:left-1/2 top-1/10">
-            <Globe />
+            <Suspense fallback={null}>
+              <Globe />
+            </Suspense>
           </figure>
         </div>
         {/* Grid 4 */}

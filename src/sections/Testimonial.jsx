@@ -22,6 +22,7 @@ const ReviewCard = ({ profile_image, name, role, body, profile_link }) => {
           height="46"
           alt={name}
           src={profile_image}
+          loading="lazy"
         />
         <div className="flex flex-col w-[calc(100%-6rem)] overflow-hidden">
           <a href={profile_link} target="_blank" rel="noopener noreferrer">
