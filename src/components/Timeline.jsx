@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }) => {
@@ -32,8 +32,8 @@ export const Timeline = ({ data }) => {
             className="flex justify-start pt-10 md:pt-40 md:first:pt-20 gap-6 lg:gap-10 flex-col lg:flex-row"
           >
             <div className="lg:sticky z-40 flex flex-col items-center self-start md:flex-row top-40 lg:max-w-sm md:w-full">
-              <div className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-[15px] bg-midnight">
-                <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
+              <div className="absolute flex items-center justify-center size-10 rounded-full -left-[15px] bg-midnight">
+                <div className="size-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
               </div>
               <div className="flex-col gap-1 md:gap-2 font-bold flex pl-10 md:text-4xl text-neutral-300">
                 <span className="text-xs md:text-base text-lavender">{item.date}</span>

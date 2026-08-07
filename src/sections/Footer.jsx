@@ -6,14 +6,14 @@ const Footer = () => {
 
       <div className="flex items-center justify-between gap-10 md:gap-3 w-full flex-col-reverse md:flex-row mt-10 md:mt-0">
         <div className="text-center md:text-left">
-          <p className="mb-1">© 2025 Pranav Rustagi</p>
-          <p>Made with &nbsp;❤️ &nbsp;using Next.js & Tailwind CSS</p>
+          <p className="mb-1">© {new Date().getFullYear()} Pranav Rustagi</p>
+          <p>Made with ❤️ using React &amp; Tailwind CSS</p>
         </div>
         <div>
           <div className="flex gap-6">
             {mySocials.map((social, index) => (
               <a href={social.href} key={index}>
-                <img src={social.icon} className="w-6 h-6" alt={social.name} />
+                <img src={social.icon} className="size-6" alt={social.name} />
               </a>
             ))}
           </div>

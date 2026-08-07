@@ -1,5 +1,3 @@
-import { body } from "motion/react-client";
-
 export const myProjects = [
   {
     id: "chatsy",
@@ -187,7 +185,7 @@ export const experiences = [
     company: "Codecrux Dev",
     date: "Sep 2021 - May 2023",
     contents: [
-      <p>Developed the complete admin panel for the <a href="https://apps.shopify.com/camouflage" className="text-lavender font-semibold tracking-wide px-1 py-1 inline-block">Camouflage</a> using Next.js to centralize merchant configuration and app management.</p>,
+      <p>Developed the complete admin panel for the <a href="https://apps.shopify.com/camouflage" className="text-lavender font-semibold tracking-wide p-1 inline-block">Camouflage</a> using Next.js to centralize merchant configuration and app management.</p>,
       "Integrated dynamic theme detection to ensure seamless behavior across varying Shopify storefront themes.",
       "Implemented custom swatch configuration to resolve functional conflicts caused by third-party swatch apps, ensuring reliable app execution across storefronts.",
       "Built a TypeScript REST API to validate multiple onboarding and configuration checkpoints, providing detailed error feedback to help merchants complete setup successfully.",
@@ -212,8 +210,8 @@ export const experiences = [
     date: "Jul 2020 - Oct 2020",
     contents: [
       "Revamped the UI for multiple Shopify storefronts, enhancing visual consistency and improving customer engagement by ~20%.",
-      <p>Designed and developed the homepage for <a href="https://stockyphi.com/" className="text-lavender font-semibold tracking-wide px-1 py-1 inline-block">Stockyphi</a>, ensuring responsive layout, clean UX, and fast load performance.</p>,
-      <p>Built a product customizer for <a href="https://www.souleway.com/" className="text-lavender font-semibold tracking-wide px-1 py-1 inline-block">Souleway</a>, allowing users to personalize weekender components (e.g., torso, handle), increasing product interaction by 25%.</p>,
+      <p>Designed and developed the homepage for <a href="https://stockyphi.com/" className="text-lavender font-semibold tracking-wide p-1 inline-block">Stockyphi</a>, ensuring responsive layout, clean UX, and fast load performance.</p>,
+      <p>Built a product customizer for <a href="https://www.souleway.com/" className="text-lavender font-semibold tracking-wide p-1 inline-block">Souleway</a>, allowing users to personalize weekender components (e.g., torso, handle), increasing product interaction by 25%.</p>,
       "Engineered a merchant dashboard to configure product-specific customization options with images, enabling dynamic, component-level personalization on the storefront."
     ]
   }

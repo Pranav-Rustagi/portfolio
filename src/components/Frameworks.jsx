@@ -31,7 +31,7 @@ export function Frameworks() {
   const orbit2 = randomized.slice(halfInd);
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center">
+    <div className="relative flex size-full flex-col items-center justify-center">
       <OrbitingCircles iconSize={28}>
         {orbit2.map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} skill={skill} />

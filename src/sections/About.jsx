@@ -14,13 +14,13 @@ const About = () => {
         <div className="flex flex-col items-start grid-default-color grid-1">
           <img
             src="assets/coding-pov.png"
-            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-20 bg-black/75 blur-[0.5px] h-full w-full object-cover object-center"
+            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-20 bg-black/75 blur-[0.5px] size-full object-cover object-center"
           />
           <div className="z-10 flex flex-col justify-end h-full mt-20">
             <img
               src="https://avatars.githubusercontent.com/u/57594891?v=4"
               alt="Pranav Rustagi"
-              className="z-10 w-16 h-16 rounded-full mb-4 md:mb-0 md:w-32 md:h-32"
+              className="z-10 size-16 rounded-full mb-4 md:mb-0 md:size-32"
             />
             <p className="headtext">Hi, I'm Pranav Rustagi</p>
             <div className="subtext flex gap-4 flex-col">
@@ -34,10 +34,10 @@ const About = () => {
         <div className="grid-default-color grid-2" draggable="false">
           <div
             ref={grid2Container}
-            className="w-full h-full relative"
+            className="size-full relative"
             draggable="false"
           >
-            <p className="flex w-full md:w-1/2 items-start h-full text-4xl text-gray-500">
+            <p className="flex size-full md:w-1/2 items-start text-4xl text-gray-500">
               Turning ideas into digital realities
             </p>
             <Card
@@ -50,11 +50,6 @@ const About = () => {
               text="Problem Solving"
               containerRef={grid2Container}
             />
-            {/* <Card
-              style={{ rotate: "-45deg", top: "65%", left: "-5%" }}
-              text="Data Engineering"
-              containerRef={grid2Container}
-            /> */}
             <Card
               style={{ rotate: "-15deg", top: "30%", right: "-2%" }}
               text="Automation"
@@ -70,11 +65,6 @@ const About = () => {
               image="assets/logos/pink-node.svg"
               containerRef={grid2Container}
             />
-            {/* <Card
-              style={{ rotate: "25deg", top: "50%", left: "0%" }}
-              image="assets/logos/pink-databricks.svg"
-              containerRef={grid2Container}
-            /> */}
             <Card
               style={{ rotate: "5deg", top: "50%", right: "-5%" }}
               image="assets/logos/pink-python.svg"
@@ -129,7 +119,7 @@ const About = () => {
               from building user-friendly front-end interfaces to contributing to full-stack web applications using modern frameworks.
             </p>
           </div>
-          <div className="absolute top-9 md:top-[40%] lg:top-[45%] w-full h-full start-[55%] md:start-[40%] scale-75 md:scale-150">
+          <div className="absolute top-9 md:top-[40%] lg:top-[45%] size-full start-[55%] md:start-[40%] scale-75 md:scale-150">
             <Frameworks />
           </div>
         </div>

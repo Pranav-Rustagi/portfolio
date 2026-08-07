@@ -130,7 +130,7 @@ body {
 }
 
 .nav-link {
-  @apply text-lg md:text-base hover:text-white transition-colors py-2 hover:cursor-pointer;
+  @apply text-lg md:text-base hover:text-white transition-colors p-2 hover:cursor-pointer;
 }
 /* Button Components */
 .btn {

@@ -1,4 +1,7 @@
 import { motion } from "motion/react";
+
+const PLATFORM_NAMES = { github: "GitHub", npm: "NPM", devto: "Dev.to" };
+
 const ProjectDetails = ({
   title,
   description,
@@ -11,7 +14,7 @@ const ProjectDetails = ({
   return (
     <div className="fixed inset-0 z-[1000] flex w-screen h-screen overflow-hidden backdrop-blur-3xl bg-black">
       <motion.div
-        className="flex flex-col gap-y-10 relative h-full w-full shadow-sm rounded-2xl px-8 md:px-20 pb-10 overflow-scroll"
+        className="flex flex-col gap-y-10 relative size-full shadow-sm rounded-2xl px-8 md:px-20 pb-10 overflow-scroll"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
       >
@@ -20,7 +23,7 @@ const ProjectDetails = ({
             onClick={closeModal}
             className="text-neutral-400 text-sm md:text-base flex items-center gap-x-2 hover:cursor-pointer -ml-2 px-2 hover-animation"
           >
-            <img src="assets/back.svg" alt="" className="w-4 h-4 opacity-70" />
+            <img src="assets/back.svg" alt="" className="size-4 opacity-70" />
             <span>Back</span>
           </button>
         </div>
@@ -80,15 +83,7 @@ const ProjectDetails = ({
                 <div className="flex gap-x-15 flex-wrap space-y-2 md:space-y-5 lg:space-y-0">
                   {
                     links?.map(({ href, type }) => {
-                      let platform_name;
-                      
-                      console.log(type);
-                      switch (type) {
-                        case "github": platform_name = "GitHub"; break;
-                        case "npm": platform_name = "NPM"; break;
-                        case "devto": platform_name = "Dev.to"; break;
-                        default: platform_name = "Others"
-                      }
+                      const platform_name = PLATFORM_NAMES[type] ?? "Others";
 
                       return (
                         <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href} key={platform_name}>
