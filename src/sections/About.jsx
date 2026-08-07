@@ -22,7 +22,7 @@ const About = () => {
               alt="Pranav Rustagi"
               className="z-10 size-16 rounded-full mb-4 md:mb-0 md:size-32"
             />
-            <p className="headtext">Hi, I'm Pranav Rustagi</p>
+            <p className="headtext">Hi, I&apos;m Pranav Rustagi</p>
             <div className="subtext flex gap-4 flex-col">
               <p>I am a software engineer with experience building frontend and full-stack web applications using React, TypeScript, and modern JavaScript frameworks, along with backend technologies such as Node.js, Express, and REST APIs.</p>
               <p>Through professional roles and projects, I have worked on dashboards, internal tools, and end-to-end features, contributing to responsive user interfaces and backend functionality. I enjoy collaborating with teams, writing clean and maintainable code, and continuously improving my skills across the stack.</p>

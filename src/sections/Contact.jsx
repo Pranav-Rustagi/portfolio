@@ -62,9 +62,9 @@ const Contact = () => {
       {showAlert && <Alert type={alertType} text={alertMessage} />}
       <div className="flex flex-col items-center justify-center w-full max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
-          <h2 className="text-heading">Let's Connect</h2>
+          <h2 className="text-heading">Let&apos;s Connect</h2>
           <p className="font-normal text-neutral-400 text-sm">
-            Whether you have a question, a project, or just want to say hi, I'm always open to opportunities and conversations.
+            Whether you have a question, a project, or just want to say hi, I&apos;m always open to opportunities and conversations.
           </p>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
