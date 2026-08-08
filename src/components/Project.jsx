@@ -27,9 +27,14 @@ const Project = ({
               <p className="text-neutral-400 text-sm md:text-base">{short_description}</p>
             )
           }
-          <div className="flex gap-x-5 gap-y-2 mt-4 text-lavender w-full flex-wrap text-xs md:text-sm">
+          <div className="flex gap-2 mt-4 w-full flex-wrap">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span
+                key={tag.id}
+                className="px-2 py-0.5 rounded-full border border-lavender/30 bg-lavender/10 text-lavender text-xs md:text-sm font-medium"
+              >
+                {tag.name}
+              </span>
             ))}
           </div>
         </div>

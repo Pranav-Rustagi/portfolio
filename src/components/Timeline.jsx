@@ -39,7 +39,16 @@ export const Timeline = ({ data }) => {
                 <span className="text-xs md:text-base text-lavender">{item.date}</span>
                 <h2 className="text-xl md:text-2xl text-neutral-100">{item.title}</h2>
                 <h3 className="text-base md:text-xl text-neutral-400">@{item.company}</h3>
-                <h3 className="text-sm md:text-lg text-neutral-500">{item.job}</h3>
+                <div className="flex gap-2 flex-wrap mt-4">
+                  {item.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-0.5 rounded-full border border-lavender/30 bg-lavender/10 text-lavender text-xs md:text-sm font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
 
