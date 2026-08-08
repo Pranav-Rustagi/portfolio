@@ -1,58 +1,58 @@
 export const myProjects = [
-  {
-    id: "chatsy",
-    title: "Chatsy",
-    short_description: "A real-time web-based messaging app designed for secure, seamless, and modern communication.",
-    description: "Chatsy is a modern web-based messaging product that delivers real-time, privacy-aware communication without compromising usability. Designed for everyday use, it combines core chat functionality with features like AI-assisted interaction and request-based messaging, allowing users to connect securely—even with people outside their contact list. With flexible sign-in options and a username-first identity model, Chatsy avoids reliance on phone numbers and minimizes data retention by design. It’s built to offer a secure, responsive, and scalable communication experience across platforms.",
-    subDescription: [
-      "Real-time, low-latency messaging for individual and group conversations",
-      "Privacy-centric architecture with minimal data retention and username-based identity",
-      "Controlled connection requests enabling secure outreach to non-contacts",
-      "Integrated AI-assisted chat functionality to enhance user interactions",
-      "Flexible authentication powered by Firebase Auth with Google, Facebook, and email support"
-    ],
-    links: [],
-    logo: "",
-    image: "/assets/projects/coming-soon.png",
-    tags: [
-      {
-        id: 1,
-        name: "Next.js",
-        path: "/assets/logos/next.svg",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/logos/typescript.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-      {
-        id: 5,
-        name: "Node.js",
-        path: "/assets/logos/node.svg",
-      },
-      {
-        id: 6,
-        name: "Express.js",
-        path: "/assets/logos/express.svg",
-      },
-      {
-        id: 7,
-        name: "WebSockets",
-        path: "/assets/logos/websockets.svg",
-      },
-      {
-        id: 8,
-        name: "Firebase",
-        path: "/assets/logos/firebase.svg",
-      },
-    ],
-    status: "in-progress"
-  },
+  // {
+  //   id: "chatsy",
+  //   title: "Chatsy",
+  //   short_description: "A real-time web-based messaging app designed for secure, seamless, and modern communication.",
+  //   description: "Chatsy is a modern web-based messaging product that delivers real-time, privacy-aware communication without compromising usability. Designed for everyday use, it combines core chat functionality with features like AI-assisted interaction and request-based messaging, allowing users to connect securely—even with people outside their contact list. With flexible sign-in options and a username-first identity model, Chatsy avoids reliance on phone numbers and minimizes data retention by design. It’s built to offer a secure, responsive, and scalable communication experience across platforms.",
+  //   subDescription: [
+  //     "Real-time, low-latency messaging for individual and group conversations",
+  //     "Privacy-centric architecture with minimal data retention and username-based identity",
+  //     "Controlled connection requests enabling secure outreach to non-contacts",
+  //     "Integrated AI-assisted chat functionality to enhance user interactions",
+  //     "Flexible authentication powered by Firebase Auth with Google, Facebook, and email support"
+  //   ],
+  //   links: [],
+  //   logo: "",
+  //   image: "/assets/projects/coming-soon.png",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "Next.js",
+  //       path: "/assets/logos/next.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "TypeScript",
+  //       path: "/assets/logos/typescript.svg",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "TailwindCSS",
+  //       path: "/assets/logos/tailwindcss.svg",
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "Node.js",
+  //       path: "/assets/logos/node.svg",
+  //     },
+  //     {
+  //       id: 6,
+  //       name: "Express.js",
+  //       path: "/assets/logos/express.svg",
+  //     },
+  //     {
+  //       id: 7,
+  //       name: "WebSockets",
+  //       path: "/assets/logos/websockets.svg",
+  //     },
+  //     {
+  //       id: 8,
+  //       name: "Firebase",
+  //       path: "/assets/logos/firebase.svg",
+  //     },
+  //   ],
+  //   status: "in-progress"
+  // },
   {
     id: "highlight-plus",
     title: "Highlight Plus",
@@ -156,11 +156,22 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Software Engineer",
-    job: "Data Migration",
+    company: "91Social",
+    tags: ["Healthcare Tech", "Open Source", "React"],
+    date: "Feb 2026 - Present",
+    contents: [
+      <p key="egov-outsourced">Outsourced software development for eGov Foundation, building healthcare plugins for <a href="https://care.ohc.network/" className="text-lavender font-semibold tracking-wide p-1 inline-block" target="_blank" rel="noopener noreferrer">CARE</a>, an open-source EMR and digital public good developed by the Open Healthcare Network (OHC) and used across multiple Indian states.</p>,
+      "Developed a plugin to integrate CARE Pharmacy with Karnataka's eAushadhi drug distribution system, enabling pharmacists to fetch facility-specific deliveries directly in CARE, with automated medicine mapping, suggestions for unmatched medicines, and configurable partial delivery and quantity acceptance.",
+      <p key="digit-integration">Built a <a href="https://digit.org/" className="text-lavender font-semibold tracking-wide p-1 inline-block" target="_blank" rel="noopener noreferrer">DIGIT</a> integration plugin connecting CARE with eGov DIGIT&apos;s Public Grievance Redressal system, implementing complaint submission, periodic status synchronization through scheduled jobs, and on-demand status refreshes to keep grievance records in sync.</p>,
+      "Currently developing CARE's radiology module, including service-request workflows and integration with Pine Labs for payment processing."
+    ],
+  },
+  {
+    title: "Software Engineer",
+    tags: ["Data Migration", "ETL Pipelines", "Databricks", "Internal Tooling"],
     company: "Genpact",
     date: "Oct 2024 - Dec 2025",
     contents: [
-      "Migrated 100+ enterprise ETL jobs from Talend and Greenplum to Databricks by converting Talend workflows and PostgreSQL transformation logic, ensuring data integrity while improving scalability and pipeline performance.",
       "Designed and developed an end-to-end Python-based ETL code conversion framework to automate the transformation of PostgreSQL and Talend components into Databricks SQL notebooks, improving throughput by 60% and reducing manual effort by 70%.",
       "Generated end-to-end data lineage mappings from Orion Governance by applying graph traversal techniques on component-level dependencies, improving traceability by 35% and accelerating root-cause analysis during large-scale ETL migrations.",
       "Built a real-time data migration monitoring dashboard using React, Hooks, Redux, and Tailwind CSS, featuring dynamic filters, charts, and optimized polling-based updates to track overall, domain-level, and ingestion progress, reducing reporting delays by 85%.",
@@ -169,7 +180,7 @@ export const experiences = [
   },
   {
     title: "Software Engineer (Internship)",
-    job: "Data Engineering & Gen AI",
+    tags: ["Data Engineering", "Generative AI", "AWS"],
     company: "Genpact",
     date: "Feb 2024 - Jul 2024",
     contents: [
@@ -181,11 +192,11 @@ export const experiences = [
   },
   {
     title: "Full-Stack Developer (Freelance)",
-    job: "Shopify App Development",
+    tags: ["Shopify App Development", "Next.js"],
     company: "Codecrux Dev",
     date: "Sep 2021 - May 2023",
     contents: [
-      <p key="camouflage-admin-panel">Developed the complete admin panel for the <a href="https://apps.shopify.com/camouflage" className="text-lavender font-semibold tracking-wide p-1 inline-block">Camouflage</a> using Next.js to centralize merchant configuration and app management.</p>,
+      <p key="camouflage-admin-panel">Developed the complete admin panel for the <a href="https://apps.shopify.com/camouflage" className="text-lavender font-semibold tracking-wide p-1 inline-block" target="_blank" rel="noopener noreferrer">Camouflage</a> using Next.js to centralize merchant configuration and app management.</p>,
       "Integrated dynamic theme detection to ensure seamless behavior across varying Shopify storefront themes.",
       "Implemented custom swatch configuration to resolve functional conflicts caused by third-party swatch apps, ensuring reliable app execution across storefronts.",
       "Built a TypeScript REST API to validate multiple onboarding and configuration checkpoints, providing detailed error feedback to help merchants complete setup successfully.",
@@ -194,7 +205,7 @@ export const experiences = [
   },
   {
     title: "Software Developer (Internship)",
-    job: "Web App Development",
+    tags: ["Web App Development", "React"],
     company: "iQueue 365",
     date: "Dec 2021 - Jan 2023",
     contents: [
@@ -205,13 +216,13 @@ export const experiences = [
   },
   {
     title: "Software Developer (Internship)",
-    job: "Shopify Frontend Development",
+    tags: ["Shopify", "UI/UX"],
     company: "Gypsyphi",
     date: "Jul 2020 - Oct 2020",
     contents: [
       "Revamped the UI for multiple Shopify storefronts, enhancing visual consistency and improving customer engagement by ~20%.",
-      <p key="stockyphi-homepage">Designed and developed the homepage for <a href="https://stockyphi.com/" className="text-lavender font-semibold tracking-wide p-1 inline-block">Stockyphi</a>, ensuring responsive layout, clean UX, and fast load performance.</p>,
-      <p key="souleway-customizer">Built a product customizer for <a href="https://www.souleway.com/" className="text-lavender font-semibold tracking-wide p-1 inline-block">Souleway</a>, allowing users to personalize weekender components (e.g., torso, handle), increasing product interaction by 25%.</p>,
+      <p key="stockyphi-homepage">Designed and developed the homepage for <a href="https://stockyphi.com/" className="text-lavender font-semibold tracking-wide p-1 inline-block" target="_blank" rel="noopener noreferrer">Stockyphi</a>, ensuring responsive layout, clean UX, and fast load performance.</p>,
+      <p key="souleway-customizer">Built a product customizer for <a href="https://www.souleway.com/" className="text-lavender font-semibold tracking-wide p-1 inline-block" target="_blank" rel="noopener noreferrer">Souleway</a>, allowing users to personalize weekender components (e.g., torso, handle), increasing product interaction by 25%.</p>,
       "Engineered a merchant dashboard to configure product-specific customization options with images, enabling dynamic, component-level personalization on the storefront."
     ]
   }

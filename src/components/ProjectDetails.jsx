@@ -86,7 +86,7 @@ const ProjectDetails = ({
                       const platform_name = PLATFORM_NAMES[type] ?? "Others";
 
                       return (
-                        <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href} key={platform_name}>
+                        <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-lavender text-sm md:text-base lg:text-lg" href={href} key={platform_name} target="_blank" rel="noopener noreferrer">
                           View on {platform_name}&nbsp;
                           <img src="assets/arrow-up.svg" className="size-4" />
                         </a>
